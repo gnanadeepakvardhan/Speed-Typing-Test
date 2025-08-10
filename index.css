@@ -1,0 +1,162 @@
+body {
+    background-color: #f3eaff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+    border: 2px solid #9aa5b1;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(105, 12, 176, 0.1);
+}
+
+.card-header {
+    background-color: #690cb0;
+    color: #ffffff;
+    border-bottom: 2px solid #9aa5b1;
+    border-radius: 13px 13px 0 0 !important;
+}
+
+.card-header h1 {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.timer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background-color: #dac0ff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #9aa5b1;
+}
+
+.clock-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.timer-text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #690cb0;
+    margin: 0;
+}
+
+.quote-section {
+    background-color: #f2ebfe;
+    padding: 25px;
+    border-radius: 10px;
+    border: 2px solid #9aa5b1;
+    position: relative;
+}
+
+.quote-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #3e4c59;
+    margin: 0;
+    min-height: 60px;
+}
+
+.input-section textarea {
+    border: 2px solid #9aa5b1;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #323f4b;
+    background-color: #ffffff;
+}
+
+.input-section textarea:focus {
+    border-color: #690cb0;
+    box-shadow: 0 0 0 0.2rem rgba(105, 12, 176, 0.25);
+}
+
+.result-section {
+    min-height: 50px;
+}
+
+.result-text {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.result-text.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.result-text.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.button-section .btn {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-radius: 8px;
+    border: 2px solid transparent;
+}
+
+.btn-primary {
+    background-color: #690cb0;
+    border-color: #690cb0;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #5a0a9a;
+    border-color: #5a0a9a;
+}
+
+.btn-primary:disabled {
+    background-color: #9aa5b1;
+    border-color: #9aa5b1;
+    cursor: not-allowed;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    color: #ffffff;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #5a6268;
+}
+
+#loadingSpinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.spinner-border {
+    width: 2rem;
+    height: 2rem;
+}
+
+@media (max-width: 768px) {
+    .timer-text {
+        font-size: 1.5rem;
+    }
+    
+    .quote-text {
+        font-size: 1rem;
+    }
+    
+    .button-section .btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
